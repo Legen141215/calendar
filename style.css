@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffe0ec, #fce4ec);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.container, .lock-screen {
+    background: white;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    animation: slideUp 1s ease-out;
+}
+
+h1, h2 {
+    color: #d81b60;
+}
+
+input[type="date"], input[type="password"], #noteArea {
+    width: 100%;
+    margin: 1em 0;
+    padding: 0.8em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#noteArea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ad1457;
+}
+
+#errorMsg {
+    color: red;
+    font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
